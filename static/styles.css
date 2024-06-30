@@ -5,3 +5,85 @@
             height: 100vh;
             background-color: lightslategray;
         }
+
+     .container {
+            display: flex;
+            width: 80%;
+            margin: auto;
+        }
+
+        .box {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .box:nth-child(1) {
+            background-color: #80ff80;
+            resize: none;
+            height: 40vh;
+            width: auto;
+
+        }
+
+        .box:nth-child(2) {
+            background-color: #ffb3b3;
+            max-width: 40vw;
+            overflow: auto;
+            text-wrap: inherit;
+            word-wrap: break-word;
+        }
+
+         form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label, textarea, button {
+            margin: 10px 0;
+        }
+
+        textarea {
+            resize: none;
+            width: 80%;
+            background-color: #cdffcd;
+        }
+
+        .head {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+        }
+
+        button {
+            border: solid 2px;
+            text-decoration: underline;
+            color: blue;
+        }
+
+         .input {
+            background-color: #cdffcd;
+            width: 40%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
+        .output {
+            width: 100%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
